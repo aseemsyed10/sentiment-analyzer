@@ -73,7 +73,26 @@ Some incorrect predictions occurred on neutral or ambiguous sentences:
 These errors occur because such phrases can be interpreted differently depending on context, making them difficult to classify precisely.
 
 ---
+## ⚠️ Challenges Faced
 
+During the development of this project, several challenges were encountered:
+
+- **Model Selection Issue:**  
+  The default HuggingFace sentiment model only supports binary classification (Positive/Negative). Since the assignment required three classes (Positive, Negative, Neutral), a different model had to be researched and selected.
+
+- **Label Mapping Confusion:**  
+  Initially, the model outputs were not mapped correctly, leading to incorrect or `None` predictions. This required debugging and adjusting the label mapping function.
+
+- **Handling Neutral Sentiment:**  
+  Neutral sentences were difficult to classify accurately because they often contain subtle or ambiguous language. The model sometimes interpreted neutral text as slightly positive or negative.
+
+- **Input Sensitivity:**  
+  Small changes in input, such as punctuation (e.g., "It's decent" vs "It's decent."), resulted in different confidence scores, showing that the model is sensitive to exact text formatting.
+
+- **User Input Validation:**  
+  Short or incomplete inputs (e.g., single words or numbers) led to unreliable predictions, requiring additional checks in the CLI to ensure meaningful input.
+
+---
 ## 🧠 Observations
 
 * The model performs very well on **clearly positive and clearly negative text**.
