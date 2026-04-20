@@ -92,13 +92,19 @@ During the development of this project, several challenges were encountered:
 - **User Input Validation:**  
   Short or incomplete inputs (e.g., single words or numbers) led to unreliable predictions, requiring additional checks in the CLI to ensure meaningful input.
 
+- **Input Handling and Preprocessing:**  
+  The model produced inconsistent results for very short or incomplete inputs. To address this, input validation was added to encourage users to enter full sentences. Additionally, minor text normalization (such as trimming whitespace and handling punctuation) was applied to improve consistency.
+
 ---
 ## 🧠 Observations
 
 * The model performs very well on **clearly positive and clearly negative text**.
+* The model performs better on complete sentences compared to short or incomplete inputs.
 * It struggles more with **neutral or ambiguous sentences**, where sentiment is subtle.
 * Confidence scores are higher for strong sentiment and lower for uncertain inputs.
 * Small changes in wording or punctuation can slightly affect prediction confidence.
+* To improve usability, a validation check was added to prompt users to enter more meaningful input.
+* Basic text normalization (e.g., trimming spaces and handling punctuation) was applied to reduce inconsistencies in predictions.
 
 ---
 
