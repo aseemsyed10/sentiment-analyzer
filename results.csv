@@ -1,0 +1,51 @@
+text,true_label,predicted_label,score
+"I loved this movie, it was fantastic!",Positive,Positive,0.9870691299438477
+This was the worst experience ever.,Negative,Negative,0.931978166103363
+"The product is okay, nothing special.",Neutral,Neutral,0.5986862778663635
+Absolutely amazing performance!,Positive,Positive,0.9668163061141968
+I hate this so much.,Negative,Negative,0.8875116109848022
+"It’s fine, not too bad.",Neutral,Positive,0.6182677149772644
+Best purchase I’ve made!,Positive,Positive,0.9814885854721069
+"Terrible quality, very disappointed.",Negative,Negative,0.9311902523040771
+It works as expected.,Neutral,Neutral,0.5579180717468262
+I’m extremely happy with this.,Positive,Positive,0.9876649975776672
+Not worth the money.,Negative,Negative,0.6925057172775269
+Average experience.,Neutral,Negative,0.5225096940994263
+Highly recommend this!,Positive,Positive,0.9637449979782104
+Worst product ever.,Negative,Negative,0.919448733329773
+It’s decent.,Neutral,Positive,0.7718251347541809
+I really enjoyed using this.,Positive,Positive,0.9798224568367004
+Very bad service.,Negative,Negative,0.8445854187011719
+Nothing impressive.,Neutral,Neutral,0.4753521680831909
+Excellent quality!,Positive,Positive,0.8824729919433594
+I regret buying this.,Negative,Negative,0.864983856678009
+I’m satisfied with the result.,Positive,Positive,0.9124369025230408
+This is awful and frustrating.,Negative,Negative,0.930294930934906
+It is just normal.,Neutral,Neutral,0.7058237195014954
+Superb and wonderful!,Positive,Positive,0.9700588583946228
+This is disappointing.,Negative,Negative,0.8542550802230835
+"Not bad, just average.",Neutral,Neutral,0.5508466362953186
+I’m very pleased with this item.,Positive,Positive,0.9864997863769531
+Completely useless product.,Negative,Negative,0.9018110036849976
+It was neither good nor bad.,Neutral,Positive,0.48411303758621216
+Fantastic work by the team.,Positive,Positive,0.9775830507278442
+I would never buy this again.,Negative,Negative,0.8922362327575684
+The experience was okay overall.,Neutral,Positive,0.9287219643592834
+This made my day!,Positive,Positive,0.9754317998886108
+Extremely poor performance.,Negative,Negative,0.881804347038269
+It’s acceptable.,Neutral,Positive,0.5326915979385376
+I’m impressed by the quality.,Positive,Positive,0.9182481169700623
+The item broke after one use.,Negative,Neutral,0.48685410618782043
+Nothing to complain about.,Neutral,Neutral,0.5067769885063171
+One of the best things I’ve used.,Positive,Positive,0.971396267414093
+Customer support was horrible.,Negative,Negative,0.9188066124916077
+It was just fine.,Neutral,Positive,0.8091326355934143
+I truly love this product.,Positive,Positive,0.9823196530342102
+This is a complete disaster.,Negative,Negative,0.877906858921051
+"It’s manageable, I guess.",Neutral,Positive,0.5905051231384277
+Brilliant experience from start to finish.,Positive,Positive,0.9817948341369629
+I’m upset with the purchase.,Negative,Negative,0.8909902572631836
+This seems pretty standard.,Neutral,Neutral,0.7135643362998962
+Very reliable and easy to use.,Positive,Positive,0.9368845224380493
+Waste of money.,Negative,Negative,0.7434298396110535
+It’s okay for the price.,Neutral,Neutral,0.5438757538795471
