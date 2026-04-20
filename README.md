@@ -51,7 +51,7 @@ python main.py
 
 The model was tested on **50 hand-labeled examples**.
 
-**Accuracy: ~85%**  
+**Accuracy: ~90%**  
 
 Each entry in `results.csv` contains:
 
