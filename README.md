@@ -1,43 +1,98 @@
 # Sentiment Analyzer using HuggingFace Transformers
 
-## Overview
+## 📌 Overview
 
-This project is a sentiment analysis tool that classifies text as Positive, Negative, or Neutral using a pre-trained transformer model from HuggingFace.
+This project implements a sentiment analysis tool that classifies text into **Positive, Negative, or Neutral** categories using a pre-trained transformer model from HuggingFace. The system takes user input, processes it through the model, and returns both the predicted sentiment label and a confidence score.
 
-## Model Used
+---
 
-I used `cardiffnlp/twitter-roberta-base-sentiment-latest`, a 3-label sentiment model. I chose this model because the assignment requires Positive, Negative, and Neutral labels.
+## 🤖 Model Used
 
-## How to Run
+I used the **cardiffnlp/twitter-roberta-base-sentiment-latest** model, which is based on RoBERTa and supports **three sentiment classes**:
 
-1. Install dependencies:
+* Negative
+* Neutral
+* Positive
+
+This model was selected because the default HuggingFace sentiment model is binary (Positive/Negative), while the assignment requires three classes including Neutral.
+
+---
+
+## 🚀 How to Run
+
+### 1. Install dependencies
 
 ```bash
 pip install transformers torch pandas scikit-learn
 ```
 
-2. Run the script:
+### 2. Run the script
 
 ```bash
 python main.py
 ```
 
-3. Enter a sentence in the terminal to get its sentiment prediction and confidence score.
+### 3. Use the CLI
 
-## Files Included
+* Enter any sentence to analyze its sentiment
+* Type `quit` to exit
 
-* `main.py`
-* `results.csv`
-* `README.md`
+---
 
-## Results
+## 📂 Files Included
 
-The model was tested on 50 hand-labeled examples and compared against manual labels.
+* `main.py` → Main Python script
+* `results.csv` → 50 test examples with predictions
+* `README.md` → Project documentation
 
-## Observations
+---
 
-The model performed well on clearly positive and clearly negative examples. Most incorrect predictions happened on neutral or slightly ambiguous sentences such as “It’s decent” or “Average experience,” where sentiment can be interpreted in different ways.
+## 📊 Results
 
-## Conclusion
+The model was tested on **50 hand-labeled examples**.
 
-This project shows how a pre-trained transformer model can be used for sentiment analysis without training a model from scratch. It also shows that neutral sentiment is more difficult to classify than strong positive or negative sentiment.
+**Accuracy: XX%**  ← *(replace with your actual accuracy)*
+
+Each entry in `results.csv` contains:
+
+* Input text
+* True label
+* Predicted label
+* Confidence score
+
+---
+
+## ❌ Error Analysis
+
+Some incorrect predictions occurred on neutral or ambiguous sentences:
+
+* **"Average experience."** → Predicted: Negative
+* **"It's decent."** → Predicted: Positive
+* **"Nothing impressive."** → Predicted: Negative
+
+These errors occur because such phrases can be interpreted differently depending on context, making them difficult to classify precisely.
+
+---
+
+## 🧠 Observations
+
+* The model performs very well on **clearly positive and clearly negative text**.
+* It struggles more with **neutral or ambiguous sentences**, where sentiment is subtle.
+* Confidence scores are higher for strong sentiment and lower for uncertain inputs.
+* Small changes in wording or punctuation can slightly affect prediction confidence.
+
+---
+
+## ⚠️ Limitations
+
+* Neutral sentiment is harder to classify than positive or negative.
+* The model may misinterpret short or incomplete text.
+* Predictions depend heavily on wording and context.
+
+---
+
+## 📌 Conclusion
+
+This project demonstrates how transformer-based NLP models can be used for real-world sentiment analysis tasks. While the model achieves high accuracy on clear cases, handling neutral sentiment remains a challenge, highlighting the complexity of natural language understanding.
+
+---
